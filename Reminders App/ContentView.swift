@@ -10,7 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-
+        
+        
+        List {
             Group{
                 ListObjects(task: "Call auto body shop", time: "2023-11-16")
                 
@@ -29,9 +31,14 @@ struct ContentView: View {
                 ListObjects(task: "Call mechanic to get TARDIS repaired", time: "Tomorrow, 12:00 PM")
                 
             }
-            .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+            .listRowSeparatorTint(.gray)
+            .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+            
             .padding(.top, 10)
- 
+            
+            }
+        .listStyle(.plain)
+        
         }
        
     }
