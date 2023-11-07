@@ -74,6 +74,7 @@ struct ContentView: View {
                         Button(action: {}) {
                             HStack {
                                 Image(systemName: "square.and.arrow.up")
+                                    .padding()
                                 Image(systemName: "ellipsis.circle")
                             }
                             
